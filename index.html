@@ -212,20 +212,26 @@
       </div>
     </div>
 
-   <div class="screen" id="finishScreen">
-  <div class="result-title">You Did It, Ari!</div>
-  <div class="result-time" id="finalTime">Final Time: 00:00.0</div>
-  <div class="result-text">
-    Congratulations, Ari! You finished all 10 sentences.
-    Write this time on your sheet.
+    <div class="screen" id="finishScreen">
+      <div class="result-title">You Did It, Ari!</div>
+      <div class="result-time" id="finalTime">Final Time: 00:00.0</div>
+      <div class="result-text">
+        Congratulations, Ari! You finished all 10 sentences.
+        Write this time on your sheet.
+      </div>
+      <img
+        id="celebrationImg"
+        class="celebration-img"
+        src="https://raw.githubusercontent.com/creativesilva/F_and_F_unit4week5/refs/heads/main/Girl_Frog.png"
+        alt="Girl with frog"
+      />
+      <div class="buttons">
+        <button class="start-btn" id="playAgainBtn" type="button">Play Again</button>
+        <button class="reset-btn" id="finishResetBtn" type="button">Reset</button>
+      </div>
+      <div class="note">Great reading work today.</div>
+    </div>
   </div>
- <img id="celebrationImg" src="https://raw.githubusercontent.com/creativesilva/F_and_F_unit4week5/refs/heads/main/Girl_Frog.png" style="width:260px;margin-top:20px;">
-  <div class="buttons">
-    <button class="start-btn" id="playAgainBtn" type="button">Play Again</button>
-    <button class="reset-btn" id="finishResetBtn" type="button">Reset</button>
-  </div>
-  <div class="note">Great reading work today.</div>
-</div>
 
   <script>
     const sentences = [
@@ -241,7 +247,7 @@
       "Could you help me?"
     ];
 
-    const celebrationImage = "ari_frog.png";
+    const celebrationImage = "https://raw.githubusercontent.com/creativesilva/F_and_F_unit4week5/refs/heads/main/Girl_Frog.png";
 
     const app = document.getElementById("app");
     const startScreen = document.getElementById("startScreen");
